@@ -1,0 +1,124 @@
+/*****************************/
+/***       Meichu2012      ***/
+/*****************************/
+
+
+
+/*div{border:1px solid #000;}*/
+/*tr{border:1px solid #123456;}
+td{border:1px solid #654321;}
+table{border:1px solid #432156;}*/
+
+/*
+li{border:1px solid #345920;}
+ul{border:1px solid #352304;}
+*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+input.button { cursor: pointer; }
+
+img { border: 0 none; }
+
+a:link, a:visited{
+	outline: none; /* for Firefox */
+	hlbr:expression(this.onFocus=this.blur()); /* for IE */
+	color: #0084ff;
+}
+
+a:hover, a:active{
+	cursor: pointer;
+	color: #ff5474;
+}
+
+h1{
+	word-wrap:break-word;
+	display: inline;
+	line-height: 23px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ff8300;
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4; 
+}
+
+h2{
+	word-wrap:break-word;
+	display: inline;
+	line-height: 23px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #487aae;
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4; 
+}
+
+h3{
+	word-wrap:break-word;
+	display: inline;
+	line-height: 23px;
+	font-size: 13px;
+	color: #797979;
+	font-weight: normal;
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4; 
+}
+
+h4{
+	word-wrap:break-word;
+	display: inline;
+	line-height: 23px;
+	font-size: 14px;
+	color: #ff3b3b;
+	font-weight: bold;	
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4; 
+}
+
+h5{
+	word-wrap:break-word;
+	display: inline;
+	line-height: 23px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #7eb01e;
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4; 
+}
+
+
+html{
+	scrollbar-face-color:#FFFFFF;/*最大區域顏色*/
+	scrollbar-highlight-color:#FFFFFF;/*左上陰影*/
+	scrollbar-3dlight-color:#FFFFFF;/*左上線條*/
+	scrollbar-darkshadow-color:#FFFFFF;/*右下線條*/
+	scrollbar-shadow-color:#FFFFFF;/*右下陰影*/
+	scrollbar-arrow-color:#585858;/*箭頭顏色*/
+	scrollbar-track-color:#FFFFFF;/*底色*/
+}
+
+body{
+    background-color: transparent;
+    color: #303030;
+	line-height: 23px;
+    font-size: 14px;
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4; 
+    text-align: left;
+	overflow-x: hidden;
+}
+
+#left{
+	background: 0 0 no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 430px;
+}
+
+#right{
+	position: relative;
+	top: 0px;
+	left: 365px;
+	width: 325px;
+	height: 430px;
+}

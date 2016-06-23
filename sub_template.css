@@ -1,0 +1,90 @@
+/*****************************/
+/***       Meichu2012      ***/
+/*****************************/
+
+
+/*
+div{border:1px solid #000;}
+tr{border:1px solid #123456;}
+td{border:1px solid #654321;}
+table{border:1px solid #432156;}
+*/
+/*
+li{border:1px solid #345920;}
+ul{border:1px solid #352304;}
+*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+input.button { cursor: pointer; }
+
+img { border: 0 none; }
+
+a{
+	outline: none; /* for Firefox */
+	hlbr:expression(this.onFocus=this.blur()); /* for IE */
+}
+
+body{
+    background-color: transparent;
+	font-family: Arial;
+    text-align: left;
+	overflow: hidden;
+}
+
+/*****************************/
+/*body*/
+#sub_nav{
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 48px;
+	width: 672px;
+	height: 63px;
+	background: 0 0 no-repeat;
+}
+
+#sub_nav a{
+	float: left;
+	width: 96px;
+	height: 63px;
+	display:block;
+	position:relative;
+    font-size:0; 
+	text-align: left;
+    *text-indent:-9999px; 
+}
+#sub_nav ul {
+	float: left;
+}
+
+#sub_nav li {
+	float: left;
+	position: relative;
+	list-style:none;
+}
+
+#article{
+	position: absolute;
+	top: 63px;
+	left: 0px;
+	width: 700px;
+	height: 468px;
+}
+
+#sub_frame {
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4é;
+	background-color: transparent;
+	position: relative;
+	top:20px;
+	left:0;
+	width: 710px;
+	height: 430px;
+	text-align: left;
+	padding: 0 px, 10px, 10px, 10px;
+	border: 0px;
+}
+
