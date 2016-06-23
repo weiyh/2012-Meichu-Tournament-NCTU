@@ -1,0 +1,113 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-tw" lang="zh-tw" > 
+<head> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+	<title>國立交通大學壬辰梅竹後援會</title> 
+	<link rel="stylesheet" href="template.css" type="text/css" />
+		
+	<script src="jquery.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="js/slimbox2.js"></script>
+	<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />	
+</head>
+<script language="javascript">
+var current = -1;
+
+function LightboxCall(link,caption) {	
+	jQuery.slimbox(link, caption);
+}
+
+function LightboxMultCall(imgArray,startpic){
+	//jQuery.slimbox([["cat.jpg", "Nice cat"], ["dog.jpg"]], 0);
+	jQuery.slimbox(imgArray, startpic);
+}
+
+function mainmenu( id , mode)
+{
+		var m = document.getElementsByName('mmn');
+		if(mode == 0 && id != current)
+		{
+			m[(id-1)].style.background = "url('')";
+		}
+		else if(mode == 1 || mode == 2)
+		{
+			if(mode == 2)
+				current = id;
+		
+			for( i = 0 ; i < m.length ; i = i+1)
+			{
+				if( (i+1) == id )
+					m[i].style.background = "url('images/w"+id+".png')";
+				else if(mode == 2)
+					m[i].style.background = "url('')";
+			}
+		}
+}
+
+</script>
+
+<body onLoad="Init();">
+<div id="body">
+
+	<div id="container">
+	
+		<div id="header">
+		
+			<div id="top">
+				<a href="index.html" target="_self">home</a>
+			</div>
+			<div id="top_ad">
+				<a href="http://www.umc.com/english/index.asp" target="_blank"><img src="images/logo/umc.png" width="150" height="30" border="0" alt="UMC聯華電子"><br><center><h1>聯華電子</h1></center></a>
+			</div>
+			<div id="top_count">
+			</div>
+			
+		</div>
+
+		<div id="content">
+
+			<div id="nav">
+				<ul>
+					<li><a name="mmn" href="original.html" target="frame" onclick="mainmenu(1,2);" onmouseover="mainmenu(1,1);" onmouseout="mainmenu(1,0);">梅竹源起</a></li>
+					<li><a name="mmn" href="about.html" target="frame" id="mn2" onclick="mainmenu(2,2);" onmouseover="mainmenu(2,1);" onmouseout="mainmenu(2,0);">梅後介紹</a></li>
+					<li><a name="mmn" href="activity.html" target="frame" id="mn3" onclick="mainmenu(3,2);" onmouseover="mainmenu(3,1);" onmouseout="mainmenu(3,0);">梅竹系列活動</a></li>
+					<li><a name="mmn" href="product.html" target="frame" id="mn4" onclick="mainmenu(4,2);" onmouseover="mainmenu(4,1);" onmouseout="mainmenu(4,0);">梅竹周邊商品</a></li>
+					<li><a name="mmn" href="photo.html" target="frame" id="mn5" onclick="mainmenu(5,2);" onmouseover="mainmenu(5,1);" onmouseout="mainmenu(5,0);">照片集錦</a></li>
+					<li><a name="mmn" href="sponsor.html" target="frame" id="mn6" onclick="mainmenu(6,2);" onmouseover="mainmenu(6,1);" onmouseout="mainmenu(6,0);">贊助廠商</a></li>
+					<li><a name="mmn" href="link.html" target="frame" id="mn7" onclick="mainmenu(7,2);" onmouseover="mainmenu(7,1);" onmouseout="mainmenu(7,0);">友站連結</a></li>
+				</ul>
+			</div>
+			
+			<div id="main">
+				<iframe src="top.html" allowtransparency="true" id="frame" name="frame" frameborder="0" border="0" cellspacing="0"></iframe>
+			</div>
+			
+			<div id="copyright">
+				<p><h1></h1>
+				©2012 國立交通大學壬辰梅竹後援會 All rights reserved.
+				</p>
+			</div>
+			
+			<div id="people">
+				<p>人次：
+				<!-- FC2計數器 開始 -->
+				<script language="javascript" type="text/javascript" src="http://counter1.fc2.com/counter.php?id=89141594"></script><noscript><img src="http://counter1.fc2.com/counter_img.php?id=89141594" /></noscript>
+				<!-- FC2計數器 結束 -->	
+				</p>
+			</div>
+
+			<div id="cd_photo">
+				
+			</div>
+
+		</div>
+		
+		
+		
+	</div>
+</div>
+<a href="" rel="lightbox" id="lightbox_link"> </a>
+
+</body>
+</html>
