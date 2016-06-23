@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-tw" lang="zh-tw" > 
+<head> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+	<title>3-6</title> 
+	<link rel="stylesheet" href="main_template.css" type="text/css" /> 
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script language="javascript" >
+	function lightbox_sub( link , caption)
+	{
+		top.LightboxCall(link,caption);
+		return false;
+	}
+	function lightbox_sub_mult(obj)
+	{
+		//alert( $("#"+obj.rel+" a") );
+		//jQuery.slimbox([["cat.jpg", "Nice cat"], ["dog.jpg"]], 0);
+		var startpic = -1;
+		var imgArray = new Array( $("#"+obj.parentElement.id+" a").length );
+		
+		for ( i = 0 ; i < $("#"+obj.parentElement.id+" a").length ; i++)
+		{
+			var each_img = new Array(9);
+			if( $("#"+obj.parentElement.id+" a")[i].href == obj.href )
+				startpic = i;
+			each_img[0] = $("#"+obj.parentElement.id+" a")[i].href;
+			each_img[1] = $("#"+obj.parentElement.id+" a")[i].title;
+			
+			imgArray[i] = each_img;			
+		}
+		top.LightboxMultCall(imgArray,startpic);
+		return false;
+	}	
+	</script>	
+</head> 
+
+<body>
+	<div id="left">
+		<p>	
+		<h1>壬辰梅竹 RC語音盃電競大賽</h1><br>
+		<br>
+		　　交清梅竹賽傳統往往以體育賽事為主軸，今年將帶給大家更活潑好玩、耳目一新的電競大賽活動，交大梅竹後援會首次與清大聯手舉辦一場梅竹賽外賽，期待藉由這樣的活動，提升梅竹賽的多樣性，不只校隊是梅竹英雄，交大的每個人都可為交大的榮耀而戰！讓更多人能成為梅竹英雄！<br>
+		<br>
+		<b>時間</b>：2012/2/29(三) 晚上六點至十點<br>		
+		<b>地點</b>：清華大學蒙民偉樓前廣場<br>
+		<br>
+		如不知地點的同學，梅竹後援會會在<h5>晚上五點半</h5>於<h5>浩然圖書館前</h5>與各位同學一起前往<br>
+		<br>
+	</div>
+	<div id="right">
+		<p><h1></h1>
+		<br>
+		　　比賽項目為<h4>Counter Strike</h4>、<h4>跑跑卡丁車</h4>以及<h4>英雄聯盟LOL</h4>三款遊戲，三款遊戲節奏緊湊，充滿緊張氣氛，而且廣為一般大眾熟悉，是電競界歷久彌新的遊戲。<br>
+		　　轉播現場除了大型營幕與高流明投影機以外，更甄選多位兩校菁英賽評為我們緊張刺激的比賽做賽評講解。<br>
+		<center>
+		<span id="poster">
+		<a href="images/photo/3_6.jpg" title="　" onClick="return lightbox_sub_mult(this);" ><img src="images/photo/3_6s.jpg" style="border: solid 5px #bbbbbb;" alt="" /></a><br>
+		</span>
+		<h3>(點選圖片放大)</h3><br>
+		<br>
+		負責人：許家興 <h3>0972886659</h3><br>
+		　　　　許洋銘 <h3>0920451210</h3><br></center>
+		<br>
+		</p>
+	</div>
+</body>
+</html>
